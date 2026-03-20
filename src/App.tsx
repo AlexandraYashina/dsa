@@ -1,14 +1,14 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
-import { Placeholder, GlobalStyle, lightTheme, darkTheme } from "./lib";
+import { Placeholder, GlobalStyle, lightTheme, darkTheme, Button } from "./lib";
 
 function App() {
-	const switcher = true;
+	const switcher = false;
 	return (
 		<ThemeProvider theme={switcher ? darkTheme : lightTheme}>
 			<GlobalStyle />
 			<main>
-				<Placeholder text="Привет, мир!" />
+				<Button view="primary" disabled={false} />
 			</main>
 		</ThemeProvider>
 	);

@@ -3,11 +3,20 @@ import "styled-components";
 declare module "styled-components" {
 	export interface DefaultTheme {
 		colors: {
+			transparent: string,
 			text: {
 				main: string,
-				primary: string,
+				primary: {
+					enabled: string,
+					disabled: string,
+				},
 				secondary: string,
-				accent: string,
+				accent: {
+					enabled: string,
+					hover: string,
+					active: string,
+					disabled: string,
+				},
 				orange: string,
 				grey: string,
 				blue: string,
@@ -16,7 +25,12 @@ declare module "styled-components" {
 	
 			background: {
 				main: string,
-				primary: string,
+				primary: {
+					enabled: string,
+					hover: string,
+					active: string,
+					disabled: string,
+				},
 				orange: string,
 				grey: string,
 				blue: string,
@@ -26,6 +40,7 @@ declare module "styled-components" {
 				main: string,
 				accent: {
 					enabled: string,
+					hover: string,
 					active: string,
 					disabled: string,
 				},
@@ -74,6 +89,27 @@ declare module "styled-components" {
 		},
 	
 		borderRadius: string,
+
+		spacing: {
+			inner: {
+				connected: string,
+				close: string,
+				related: string,
+				grouped: string,
+			},
+			outer: {
+				related: string,
+				grouped: string,
+				separate: string,
+			},
+			padding: {
+				default: string,
+				extraSmall: string,
+				small: string,
+				medium: string,
+				large: string,
+			},
+		},
 
 		animation: {
 			base: string,

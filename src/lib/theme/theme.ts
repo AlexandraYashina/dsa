@@ -3,11 +3,20 @@ import { DefaultTheme } from "styled-components";
 
 export const lightTheme: DefaultTheme = {
 	colors: {
+		transparent: 'transparent',
 		text: {
 			main: '#363F43',
-			primary: '#057EAD',
+			primary: {
+				enabled: '#057EAD',
+				disabled: '#A3D2E3',
+			},
 			secondary: '#546369',
-			accent: '#C85209',
+			accent: {
+				enabled: '#C85209',
+				hover: '#A04207',
+				active: '#803406',
+				disabled: '#F9E6DB',
+			},
 			orange: '#F9E6DB',
 			grey: '#E7E9EA',
 			blue: '#DBEDF4',
@@ -16,7 +25,12 @@ export const lightTheme: DefaultTheme = {
 
 		background: {
 			main: '#FFFFFF',
-			primary: '#057EAD',
+			primary: {
+				enabled: '#057EAD',
+				hover: '#04658A',
+				active: '#03516F',
+				disabled: '#DBEDF4',
+			},
 			orange: '#C85209',
 			grey: '#546369',
 			blue: '#057EAD',
@@ -26,6 +40,7 @@ export const lightTheme: DefaultTheme = {
 			main: '#C1C7C9',
 			accent: {
 				enabled: '#C85209',
+				hover: '#A04207',
 				active: '#803406',
 				disabled: '#F9E6DB',
 			},
@@ -75,6 +90,27 @@ export const lightTheme: DefaultTheme = {
 
 	borderRadius: '50px',
 
+	spacing: {
+		inner: {
+			grouped: '32px',
+			related: '18px',
+			connected: '10px',
+			close: '4px',
+		},
+		outer: {
+			separate: '64px',
+			related: '32px',
+			grouped: '24px',
+		},
+		padding: {
+			large: '36px',
+			medium: '32px',
+			default: '20px',
+			small: '12px',
+			extraSmall: '2px',
+		},
+	},
+
 	animation: {
 		base: `0.2s ease-in-out`,
 	},
@@ -83,11 +119,20 @@ export const lightTheme: DefaultTheme = {
 export const darkTheme: DefaultTheme = {
 	...lightTheme,
 	colors: {
+		transparent: 'transparent',
 		text: {
 			main: '#363F43',
-			primary: '#66B3D1',
+			primary: {
+				enabled: '#057EAD',
+				disabled: '#A3D2E3',
+			},
 			secondary: '#546369',
-			accent: '#C85209',
+			accent: {
+				enabled: '#C85209',
+				hover: '#A04207',
+				active: '#803406',
+				disabled: '#F9E6DB',
+			},
 			orange: '#F9E6DB',
 			grey: '#E7E9EA',
 			blue: '#DBEDF4',
@@ -96,7 +141,12 @@ export const darkTheme: DefaultTheme = {
 
 		background: {
 			main: '#012330',
-			primary: '#023F57',
+			primary: {
+				enabled: '#057EAD',
+				hover: '#04658A',
+				active: '#03516F',
+				disabled: '#DBEDF4',
+			},
 			orange: '#C85209',
 			grey: '#546369',
 			blue: '#057EAD',
@@ -106,6 +156,7 @@ export const darkTheme: DefaultTheme = {
 			main: '#C1C7C9',
 			accent: {
 				enabled: '#C85209',
+				hover: '#A04207',
 				active: '#803406',
 				disabled: '#F9E6DB',
 			},
