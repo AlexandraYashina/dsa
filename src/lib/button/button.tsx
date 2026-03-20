@@ -17,14 +17,13 @@ const StyledButton = styled.button<IButtonProps>`
 		align-items: center;
 		gap: ${props.theme.spacing.inner.connected};
 		cursor: pointer;
-		padding: unset;
 		font-family: ${props.theme.typography.fontFamily.text};
 		font-size: ${props.theme.typography.fontSize.text.base};
 	    line-height: ${props.theme.typography.lineHeight.text.base};
 		font-weight: ${props.theme.typography.fontWeight.medium};
 		border: 1px solid ${props.theme.colors.transparent};
 		border-radius: ${props.theme.borderRadius};
-		padding: ${props.theme.spacing.padding.small} ${props.theme.spacing.padding.large};;
+		padding: ${props.theme.spacing.padding.small} ${props.theme.spacing.padding.large};
 		background: unset;
 		transition: ${props.theme.animation.base};
     `}
@@ -94,7 +93,7 @@ export const Button: React.FC<IButtonProps> = ({
 	view = "primary",
 	disabled,
 	iconBefore,
-	text = "Я кнопка",
+	text = "Перейти к рецепту",
 }) => {
 	return (
 		<StyledButton view={view} disabled={disabled}>

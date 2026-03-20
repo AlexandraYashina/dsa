@@ -1,6 +1,13 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
-import { Placeholder, GlobalStyle, lightTheme, darkTheme, Button } from "./lib";
+import {
+	Placeholder,
+	GlobalStyle,
+	lightTheme,
+	darkTheme,
+	Button,
+	Badge,
+ } from "./lib";
 
 function App() {
 	const switcher = false;
@@ -8,7 +15,8 @@ function App() {
 		<ThemeProvider theme={switcher ? darkTheme : lightTheme}>
 			<GlobalStyle />
 			<main>
-				<Button view="primary" disabled={false} />
+				{/* <Button view="primary" disabled={false} iconBefore="chevronUp"/> */}
+				<Badge iconAfter="chevronUp" />
 			</main>
 		</ThemeProvider>
 	);
