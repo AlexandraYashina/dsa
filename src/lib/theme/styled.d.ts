@@ -31,6 +31,7 @@ declare module "styled-components" {
 					active: string,
 					disabled: string,
 				},
+				accent: string,
 				orange: string,
 				grey: string,
 				blue: string,

@@ -10,13 +10,13 @@ import {
  } from "./lib";
 
 function App() {
-	const switcher = false;
+	const switcher = true;
 	return (
 		<ThemeProvider theme={switcher ? darkTheme : lightTheme}>
 			<GlobalStyle />
 			<main>
-				{/* <Button view="primary" disabled={false} iconBefore="chevronUp"/> */}
-				<Badge iconAfter="chevronUp" />
+				<Button view="primary" disabled={false} />
+				{/* <Badge color="blue" iconAfter="chevronUp" /> */}
 			</main>
 		</ThemeProvider>
 	);
