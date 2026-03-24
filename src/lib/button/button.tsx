@@ -21,7 +21,8 @@ const StyledButton = styled.button<IButtonProps>`
 		font-size: ${props.theme.typography.fontSize.text.base};
 	    line-height: ${props.theme.typography.lineHeight.text.base};
 		font-weight: ${props.theme.typography.fontWeight.medium};
-		border: 1px solid ${props.theme.colors.transparent};
+		height: 48px;
+		border: ${props.theme.borderWidth} solid ${props.theme.colors.transparent};
 		border-radius: ${props.theme.borderRadius};
 		padding: ${props.theme.spacing.padding.small} ${props.theme.spacing.padding.large};
 		background: unset;

@@ -90,6 +90,7 @@ declare module "styled-components" {
 		},
 	
 		borderRadius: string,
+		borderWidth: string,
 
 		spacing: {
 			inner: {

@@ -90,6 +90,7 @@ export const lightTheme: DefaultTheme = {
 	},
 
 	borderRadius: '50px',
+	borderWidth: '2px',
 
 	spacing: {
 		inner: {
